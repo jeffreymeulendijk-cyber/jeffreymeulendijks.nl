@@ -18,7 +18,12 @@
     padding: 1rem;
   }
   .card {
-    background: #ffffff;
+    /* Meer transparant (0.65) en minder blur (5px) */
+    background: rgba(240, 248, 255, 0.65);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    
     border-radius: 20px;
     padding: 2.5rem 2rem;
     text-align: center;
@@ -43,19 +48,20 @@
   h1 {
     margin: 0;
     font-size: 1.8rem;
-    color: #111827;
+    color: #0f172a;
   }
   .subtitle {
     margin-top: 0.5rem;
-    color: #00b4d8;
+    color: #0284c7;
     font-weight: 600;
     font-size: 1.05rem;
   }
   p.bio {
     margin-top: 1rem;
-    color: #4b5563;
+    color: #1e293b;
     font-size: 0.95rem;
     line-height: 1.5;
+    font-weight: 500;
   }
   .links {
     margin-top: 1.75rem;
@@ -66,13 +72,14 @@
   .btn {
     display: block;
     padding: 0.85rem 1.5rem;
-    background-color: #e0f2fe;
+    background-color: rgba(224, 242, 254, 0.85);
     color: #0369a1;
     text-decoration: none;
     border-radius: 12px;
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.2s ease;
+    border: 1px solid rgba(186, 230, 253, 0.6);
   }
   .btn:hover {
     background-color: #00b4d8;
