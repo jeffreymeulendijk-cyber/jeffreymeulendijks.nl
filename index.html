@@ -39,11 +39,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
   }
 
   @media (max-width: 900px) {
     .container { grid-template-columns: 1fr; gap: 2.5rem; padding: 2rem 1.5rem; }
+  }
+
+  .media-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .artwork-stage {
@@ -58,12 +64,35 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
   }
 
-  .artwork-stage video {
+  .artwork-stage video, .artwork-stage img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 24px;
     object-fit: cover;
+  }
+
+  /* Fotogalerij Thumbnails */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+
+  .gallery-thumb {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    background: #11141d;
+  }
+
+  .gallery-thumb:hover {
+    transform: scale(1.05);
+    border-color: #c5a059;
   }
 
   .details {
@@ -174,6 +203,25 @@
   .footer-links a:hover {
     color: #c5a059;
   }
+
+  /* Lightbox voor grote weergave van de foto's */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+  }
 </style>
 </head>
 <body>
@@ -183,11 +231,25 @@
   </header>
 
   <main class="container">
-    <div class="artwork-stage">
-      <video autoplay loop muted playsinline>
-        <source src="kiwi.mp4" type="video/mp4">
-        Je browser ondersteunt deze video niet.
-      </video>
+    <div class="media-section">
+      <div class="artwork-stage">
+        <video autoplay loop muted playsinline id="mainMedia">
+          <source src="kiwi.mp4" type="video/mp4">
+          Je browser ondersteunt deze video niet.
+        </video>
+      </div>
+
+      <!-- Galerij thumbnails -->
+      <div class="gallery-grid">
+        <img src="1.png" alt="Detail 1" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="2.png" alt="Detail 2" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="3.png" alt="Detail 3" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="4.png" alt="Detail 4" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="5.png" alt="Detail 5" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="6.png" alt="Detail 6" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="7.png" alt="Detail 7" class="gallery-thumb" onclick="openLightbox(this.src)">
+        <img src="8.png" alt="Detail 8" class="gallery-thumb" onclick="openLightbox(this.src)">
+      </div>
     </div>
 
     <div class="details">
@@ -202,7 +264,7 @@
       <ul class="specs-list">
         <li><span>Afmetingen kunstwerk:</span> 20 cm (L) x 10 cm (B) x 14 cm (H)</li>
         <li><span>Materialen:</span> kiwi (piepschuim), poten (ijzer) en sokkel (triplex)</li>
-        <li><span>Echtheid:</span> Geleverd met handgetekend Certificaat van Echtheid</li>
+        <li><span>Echtheid:</span> Geleverd met handgetekend Certificaat van Echtheid (1/1)</li>
       </ul>
 
       <a href="mailto:jeffreymeulendijk@gmail.com?subject=Aanvraag%20Bezichtiging%20The%20Magenta%20Kiwi" class="cta-button">
@@ -219,6 +281,21 @@
       <a href="voorwaarden.html">Algemene Voorwaarden</a>
     </div>
   </footer>
+
+  <!-- Pop-up scherm voor foto's -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="Vergrote weergave">
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
 
 </body>
 </html>
