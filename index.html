@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Magenta Kiwi | Exclusief Kunstvoorwerp door Jeffrey Meulendijks</title>
+<title>The Magenta Kiwi | JEFFREY Private Collection</title>
 
-<meta name="description" content="The Magenta Kiwi is een exclusief, eenmalig vervaardigd kunstvoorwerp (Unicum 1/1) door de vader van Jeffrey Meulendijks. Bekijk de fotogalerij en boek een privébezichtiging.">
+<meta name="description" content="The Magenta Kiwi is een exclusief, eenmalig vervaardigd kunstvoorwerp (Unicum 1/1) uit de JEFFREY Private Collection. Bekijk de fotogalerij en boek een privébezichtiging.">
 
 <!-- Open Graph / WhatsApp Preview -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jeffreymeulendijks.nl/">
-<meta property="og:title" content="The Magenta Kiwi | Exclusief Kunstvoorwerp">
-<meta property="og:description" content="Unicum 1/1 uit de Meulendijks familiecollectie. Bekijk de details en informeer naar een privébezichtiging.">
+<meta property="og:title" content="The Magenta Kiwi | JEFFREY Private Collection">
+<meta property="og:description" content="Unicum 1/1 uit de JEFFREY Private Collection. Bekijk de details en informeer naar een privébezichtiging.">
 <meta property="og:image" content="https://jeffreymeulendijks.nl/1.png">
 
 <link rel="icon" type="image/png" href="favicon.png?v=3">
@@ -32,13 +32,33 @@
   }
 
   header {
-    padding: 2rem;
+    padding: 2.5rem 1rem;
     text-align: center;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    color: #c5a059;
     border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .logo-title {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #c5a059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    padding-left: 12px; /* Compenseert de letter-spacing voor perfecte centrering */
+  }
+
+  .logo-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 6px;
+    color: #c5a059;
+    text-transform: uppercase;
+    opacity: 0.85;
+    padding-left: 6px;
   }
 
   .container {
@@ -326,7 +346,8 @@
 <body>
 
   <header>
-    Jeffrey Meulendijks &mdash; Private Collection
+    <div class="logo-title">JEFFREY</div>
+    <div class="logo-subtitle">Private Collection</div>
   </header>
 
   <main class="container">
@@ -392,7 +413,7 @@
   </section>
 
   <footer>
-    <div>&copy; Jeffrey Meulendijks &mdash; Alle rechten voorbehouden.</div>
+    <div>&copy; JEFFREY Private Collection &mdash; Alle rechten voorbehouden.</div>
     <div class="company-info">Gevestigd te Veghel &bull; KvK: 15263748</div>
     <div class="footer-links">
       <a href="https://www.linkedin.com/in/jeffrey-meulendijks-181b79132/" target="_blank">LinkedIn Profiel</a>
