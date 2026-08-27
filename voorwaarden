@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algemene Voorwaarden | Jeffrey Meulendijks</title>
+
+<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="shortcut icon" type="image/png" href="favicon.png?v=2">
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    background-color: #0b0d12;
+    color: #cbd5e1;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header {
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  header a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  header a:hover {
+    color: #ec4899;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: #ec4899;
+    margin: 2rem 0 0.75rem 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: #cbd5e1;
+  }
+
+  ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    color: #cbd5e1;
+  }
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  footer a {
+    color: #94a3b8;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">&larr; Terug naar Jeffrey Meulendijks &mdash; Private Collection</a>
+  </header>
+
+  <main class="container">
+    <h1>Algemene Voorwaarden</h1>
+    <div class="subtitle">Jeffrey Meulendijks &mdash; gevestigd te Veghel, Nederland | Bijgewerkt: Augustus 2026</div>
+
+    <h2>Artikel 1. Definities</h2>
+    <p>1.1 <strong>Algemene Voorwaarden:</strong> deze Algemene Voorwaarden.</p>
+    <p>1.2 <strong>Diensten &amp; Goederen:</strong> Alle kunstvoorwerpen, producten, werken en/of diensten in de ruimste zin van het woord die door Opdrachtnemer aan Opdrachtgever worden geleverd.</p>
+    <p>1.3 <strong>Opdrachtgever:</strong> de natuurlijke- of rechtspersoon met wie Opdrachtnemer een overeenkomst heeft gesloten of die een aanvraag doet.</p>
+    <p>1.4 <strong>Opdrachtnemer:</strong> Jeffrey Meulendijks, gevestigd te Veghel, exploitant van jeffreymeulendijks.nl.</p>
+    <p>1.5 <strong>Overeenkomst:</strong> iedere Overeenkomst tussen Opdrachtgever en Opdrachtnemer inzake de (ver)koop, bezichtiging of levering van goederen c.q. diensten.</p>
+    <p>1.6 <strong>Partijen:</strong> De Partijen bij de te sluiten, dan wel gesloten Overeenkomst.</p>
+
+    <h2>Artikel 2. Toepasselijkheid</h2>
+    <p>2.1 Deze Algemene Voorwaarden zijn van toepassing op alle aanbiedingen, offertes en overeenkomsten waarbij Opdrachtnemer goederen en/of diensten levert aan Opdrachtgever.</p>
+    <p>2.2 Afwijkingen van deze Algemene Voorwaarden dienen uitsluitend schriftelijk met Opdrachtnemer overeengekomen te worden.</p>
+    <p>2.3 Algemene voorwaarden van Opdrachtgever worden uitdrukkelijk van de hand gewezen.</p>
+    <p>2.4 Mocht enige bepaling nietig zijn of vernietigd worden, dan blijven de overige bepalingen volledig van kracht.</p>
+
+    <h2>Artikel 3. Totstandkoming van de Overeenkomst</h2>
+    <p>3.1 De Overeenkomst komt tot stand door schriftelijke aanvaarding (per e-mail of schriftelijk contract) van het aanbod of de offerte door Opdrachtgever.</p>
+    <p>3.2 Indien Opdrachtgever niet expliciet akkoord geeft, maar er desondanks mee instemt dat Opdrachtnemer werkzaamheden of leveringen voorbereidt, wordt het aanbod als aanvaard beschouwd.</p>
+
+    <h2>Artikel 4. Offertes en Prijzen</h2>
+    <p>4.1 Alle aanbiedingen op de website en in offertes zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld.</p>
+    <p>4.2 Vermelde prijzen van kunstvoorwerpen zijn in Euro's (€) en gelden onder voorbehoud van typefouten.</p>
+    <p>4.3 Aan voorcalculaties of prijsindicaties kunnen geen rechten worden ontleend.</p>
+
+    <h2>Artikel 5. Betalingsvoorwaarden &amp; Eigendomsvoorbehoud</h2>
+    <p>5.1 Bij de aankoop van unieke kunstvoorwerpen dient de volledige betaling te zijn voldaan voorafgaand aan de overdracht of het transport, tenzij schriftelijk anders overeengekomen.</p>
+    <p>5.2 De hanterende betalingstermijn voor facturen bedraagt veertien (14) dagen na factuurdatum.</p>
+    <p>5.3 Alle geleverde kunstvoorwerpen en goederen blijven het uitsluitend eigendom van Opdrachtnemer totdat de verschuldigde koopsom en eventuele bijkomende transportkosten volledig zijn voldaan.</p>
+
+    <h2>Artikel 6. Levering, Transport en Bezichtiging</h2>
+    <p>6.1 Bezichtigingen vinden uitsluitend plaats op afspraak.</p>
+    <p>6.2 Vanwege de exclusieve aard en waarde van de kunstwerken geschiedt levering of transport in onderling overleg via persoonlijke overdracht of gespecialiseerd kunsttransport.</p>
+    <p>6.3 Opgegeven leveringstermijnen hebben steeds een indicatief karakter.</p>
+
+    <h2>Artikel 7. Certificaat van Echtheid &amp; Intellectueel Eigendom</h2>
+    <p>7.1 Bij eigendomsoverdracht van een origineel kunstvoorwerp (Unicum) wordt een origineel Certificaat van Echtheid meegeleverd.</p>
+    <p>7.2 Alle intellectuele eigendomsrechten en auteursrechten op de vervaardigde kunstvoorwerpen, ontwerpen en afbeeldingen blijven te allen tijde berusten bij Jeffrey Meulendijks. Het is Opdrachtgever niet toegestaan het werk commercieel te verveelvoudigen of te exploiteren zonder voorafgaande schriftelijke toestemming.</p>
+
+    <h2>Artikel 8. Aansprakelijkheid</h2>
+    <p>8.1 De totale aansprakelijkheid van Opdrachtnemer voor directe schade is in alle gevallen beperkt tot maximaal het bedrag dat voor het desbetreffende kunstvoorwerp of dienst door Opdrachtgever is betaald (excl. BTW).</p>
+    <p>8.2 Aansprakelijkheid voor indirecte schade, gevolgschade of gederfde winst is te allen tijde uitgesloten.</p>
+
+    <h2>Artikel 9. Overmacht</h2>
+    <p>9.1 Geen van Partijen is gehouden tot het nakomen van enige verplichting indien hij daartoe verhinderd is als gevolg van overmacht (waaronder begrepen maar niet beperkt tot transportschade buiten schuld van Opdrachtnemer, overheidsmaatregelen of brand).</p>
+
+    <h2>Artikel 10. Toepasselijk Recht en Geschillen</h2>
+    <p>10.1 Op alle rechtsbetrekkingen tussen Opdrachtnemer en Opdrachtgever is uitsluitend Nederlands recht van toepassing.</p>
+    <p>10.2 Geschillen zullen uitsluitend worden voorgelegd aan de bevoegde rechter van de Rechtbank Oost-Brabant (locatie 's-Hertogenbosch).</p>
+  </main>
+
+  <footer>
+    &copy; Jeffrey Meulendijks &mdash; <a href="index.html">Terug naar de hoofdvestiging</a>
+  </footer>
+
+</body>
+</html>
