@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Magenta Kiwi | Exclusief Kunstvoorwerp door Jeffrey Meulendijks</title>
 
+<meta name="description" content="The Magenta Kiwi is een exclusief, eenmalig vervaardigd kunstvoorwerp (Unicum 1/1) door de vader van Jeffrey Meulendijks. Bekijk de fotogalerij en boek een privébezichtiging.">
+
+<!-- Open Graph / WhatsApp Preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jeffreymeulendijks.nl/">
+<meta property="og:title" content="The Magenta Kiwi | Exclusief Kunstvoorwerp">
+<meta property="og:description" content="Unicum 1/1 uit de Meulendijks familiecollectie. Bekijk de details en informeer naar een privébezichtiging.">
+<meta property="og:image" content="https://jeffreymeulendijks.nl/1.png">
+
 <link rel="icon" type="image/png" href="favicon.png?v=3">
 <link rel="shortcut icon" type="image/png" href="favicon.png?v=3">
 
@@ -165,6 +174,13 @@
     color: #94a3b8;
   }
 
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
   .cta-button {
     display: inline-block;
     padding: 1.25rem 2.5rem;
@@ -179,13 +195,95 @@
     text-align: center;
     box-shadow: 0 10px 25px rgba(197, 160, 89, 0.25);
     transition: transform 0.2s, box-shadow 0.2s;
-    margin-top: 1rem;
   }
 
   .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(197, 160, 89, 0.4);
     background: linear-gradient(135deg, #d4af37 0%, #a8863c 100%);
+  }
+
+  .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .whatsapp-link:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(197, 160, 89, 0.4);
+    color: #c5a059;
+  }
+
+  .trust-note {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  /* Curator & Verkoper Sectie */
+  .curator-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+  }
+
+  .curator-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .curator-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  .curator-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c5a059;
+    flex-shrink: 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .curator-text h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+  }
+
+  .curator-role {
+    font-size: 0.85rem;
+    color: #c5a059;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .curator-bio {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 0.95rem;
   }
 
   footer {
@@ -210,6 +308,8 @@
     display: flex;
     gap: 1.5rem;
     margin-top: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .footer-links a {
@@ -261,16 +361,42 @@
         <li><span>Echtheid:</span> Geleverd met handgetekend Certificaat van Echtheid (1/1)</li>
       </ul>
 
-      <a href="mailto:jeffreymeulendijk@gmail.com?subject=Aanvraag%20Bezichtiging%20The%20Magenta%20Kiwi" class="cta-button">
-        Informeer of Boek Bezichtiging
-      </a>
+      <div class="cta-section">
+        <a href="mailto:jeffreymeulendijk@gmail.com?subject=Aanvraag%20Bezichtiging%20The%20Magenta%20Kiwi" class="cta-button">
+          Informeer of Boek Bezichtiging
+        </a>
+
+        <a href="https://wa.me/31612345678?text=Hallo%20Jeffrey,%20ik%20heb%20interesse%20in%20The%20Magenta%20Kiwi." target="_blank" class="whatsapp-link">
+          Stel direct een vraag via WhatsApp
+        </a>
+
+        <div class="trust-note">
+          Vrijblijvende aanvraag &bull; Persoonlijke reactie binnen 24 uur
+        </div>
+      </div>
     </div>
   </main>
+
+  <!-- Curator & Verkoper Sectie -->
+  <section class="curator-section">
+    <div class="curator-card">
+      <img src="profielfoto.png" alt="Jeffrey Meulendijks" class="curator-avatar">
+      <div class="curator-text">
+        <h3>Jeffrey Meulendijks</h3>
+        <div class="curator-role">Curator &amp; Vertegenwoordiger</div>
+        <p class="curator-bio">
+          Dit unieke kunstwerk is met uiterste precisie en passie vervaardigd door mijn vader. Als beheerder van deze bijzondere privécollectie draag ik zorg voor de bemiddeling, bezichtigingen en de persoonlijke overdracht aan de nieuwe eigenaar. Neem gerust contact op voor vragen over de herkomst of het boeken van een bezichtiging.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div>&copy; Jeffrey Meulendijks &mdash; Alle rechten voorbehouden.</div>
     <div class="company-info">Gevestigd te Veghel &bull; KvK: 15263748</div>
     <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jeffrey-meulendijks-181b79132/" target="_blank">LinkedIn Profiel</a>
+      <span>&bull;</span>
       <a href="privacy.html">Privacyverklaring</a>
       <span>&bull;</span>
       <a href="voorwaarden.html">Algemene Voorwaarden</a>
