@@ -126,10 +126,22 @@
     word-break: break-word;
   }
 
+  .price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
   .price {
     font-size: 2.2rem;
     font-weight: 600;
     color: #c5a059;
+  }
+
+  .vat-label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 400;
   }
 
   .description {
@@ -188,6 +200,12 @@
     align-items: center;
   }
 
+  .company-info {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+  }
+
   .footer-links {
     display: flex;
     gap: 1.5rem;
@@ -220,14 +238,18 @@
         </video>
       </a>
       <a href="details.html" class="gallery-hint">
-        &emsp;&bull;&emsp;Klik op het kunstwerk voor de fotogalerij
+        &bull; Klik op het kunstwerk voor de fotogalerij
       </a>
     </div>
 
     <div class="details">
       <div class="badge">Unicum &mdash; 1 van 1</div>
       <h1>The Magenta Kiwi</h1>
-      <div class="price">€ 49.950,-</div>
+      
+      <div class="price-container">
+        <div class="price">€ 49.950,-</div>
+        <div class="vat-label">(excl. 9% btw)</div>
+      </div>
 
       <p class="description">
         Een zeldzame, expressieve sculptuur vervaardigd met een unieke organische textuur in intens magenta. Geplaatst op een strakke, minimalistische zwarte sokkel voor het ultieme contrast. Een absoluut statement-piece voor de liefhebber van moderne, avant-gardistische kunst.
@@ -247,6 +269,7 @@
 
   <footer>
     <div>&copy; Jeffrey Meulendijks &mdash; Alle rechten voorbehouden.</div>
+    <div class="company-info">Gevestigd te Veghel &bull; KvK: 15263748</div>
     <div class="footer-links">
       <a href="privacy.html">Privacyverklaring</a>
       <span>&bull;</span>
