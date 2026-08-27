@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacyverklaring | Jeffrey Meulendijks</title>
+
+<link rel="icon" type="image/png" href="favicon.png?v=2">
+<link rel="shortcut icon" type="image/png" href="favicon.png?v=2">
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    background-color: #0b0d12;
+    color: #cbd5e1;
+    line-height: 1.8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header {
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  header a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  header a:hover {
+    color: #ec4899;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    color: #ec4899;
+    margin: 2rem 0 1rem 0;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+    color: #cbd5e1;
+  }
+
+  ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+    color: #cbd5e1;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  footer a {
+    color: #94a3b8;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">&larr; Terug naar Jeffrey Meulendijks &mdash; Private Collection</a>
+  </header>
+
+  <main class="container">
+    <h1>Privacyverklaring</h1>
+    <div class="subtitle">Deze privacyverklaring is geüpdatet op 27 augustus 2026 en wordt aangeboden door Jeffrey Meulendijks, gevestigd te Veghel in Nederland.</div>
+
+    <p>Jeffrey Meulendijks is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring via <strong>jeffreymeulendijks.nl</strong>. Om diensten en communicatie rondom de verkoop van kunstvoorwerpen goed te kunnen afhandelen, verwerken wij persoonsgegevens met de grootste zorg en vertrouwelijkheid.</p>
+
+    <h2>Jouw persoonsgegevens</h2>
+    <p>In deze privacyverklaring wordt toegelicht welke gegevens we nodig hebben, waarom we deze nodig hebben, hoe lang we deze bewaren en met wie we deze delen. Indien gegevens met derden worden gedeeld, zal een passende overeenkomst worden gesloten om te garanderen dat jouw gegevens goed beschermd blijven.</p>
+
+    <h2>Wat zijn persoonsgegevens?</h2>
+    <p>Alle gegevens die gaan over mensen en waaraan je een mens als individu kunt herkennen. Gegevens die te herleiden zijn tot een bepaald persoon (bijvoorbeeld: naam, adres, e-mailadres). Naast gewone persoonsgegevens kent de wet ook bijzondere persoonsgegevens (zoals medische of etnische gegevens). Wij verwerken <strong>geen</strong> bijzondere persoonsgegevens.</p>
+
+    <h2>Op basis waarvan verwerken we jouw persoonsgegevens?</h2>
+    <p>In de wet is vastgelegd dat persoonsgegevens alleen verwerkt mogen worden als daar een wettelijke grondslag voor is. Wij gebruiken jouw gegevens uitsluitend voor:</p>
+    <ul>
+      <li>Voor de uitvoering van een overeenkomst waar de betrokkene onderdeel van is (zoals een aankoop of bezichtigingsafspraak).</li>
+      <li>Om een verplichting na te komen die in de wet staat (bijvoorbeeld fiscale administratie-eisen).</li>
+      <li>Wanneer de betrokkene toestemming heeft gegeven voor de specifieke verwerking (zoals contact via e-mail).</li>
+    </ul>
+
+    <h2>Welke persoonsgegevens gebruiken we waarvoor?</h2>
+    <p>Wanneer je via e-mail contact met ons opneemt voor informatie of een bezichtiging van een kunstvoorwerp, verwerken wij jouw naam, e-mailadres en eventuele telefoongegevens uitsluitend om op jouw aanvraag te reageren en een eventuele levering of certificaat van echtheid af te handelen.</p>
+
+    <h2>Analytische technieken</h2>
+    <p>Onze website is gericht op privacy. Indien wij analytische tools inzetten om het gebruik van de website te meten, gebeurt dit met een geanonimiseerde instelling (zoals een geanonimiseerd IP-adres) waardoor gegevens niet te herleiden zijn naar jou als individu.</p>
+
+    <h2>Rechten van betrokkenen</h2>
+    <p>De wet bepaalt niet alleen onze plichten, maar geeft jou ook duidelijke rechten met betrekking tot jouw gegevens:</p>
+    <ul>
+      <li><strong>Recht op informatie:</strong> Je hebt het recht om te vragen welke persoonsgegevens worden verwerkt.</li>
+      <li><strong>Inzagerecht:</strong> Je hebt de mogelijkheid om te controleren hoe jouw gegevens worden verwerkt.</li>
+      <li><strong>Correctierecht:</strong> Als gegevens niet kloppen, kun je een verzoek indienen om dit te laten corrigeren.</li>
+      <li><strong>Recht van verzet &amp; bezwaar:</strong> Je kunt vragen om jouw gegevens niet meer te gebruiken of bezwaar maken.</li>
+      <li><strong>Recht om vergeten te worden:</strong> Je kunt verzoeken om jouw gegevens definitief te laten verwijderen.</li>
+    </ul>
+
+    <div class="contact-box">
+      <p style="margin: 0; font-weight: 600; color: #ffffff;">Contact opnemen</p>
+      <p style="margin: 0.5rem 0 0 0;">Wanneer je gebruik wilt maken van één van deze rechten of vragen hebt, kun je contact opnemen via e-mail: <a href="mailto:jeffreymeulendijk@gmail.com" style="color: #ec4899;">jeffreymeulendijk@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; Jeffrey Meulendijks &mdash; <a href="index.html">Terug naar de hoofdvestiging</a>
+  </footer>
+
+</body>
+</html>
