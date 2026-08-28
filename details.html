@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fotogalerij | The Magenta Kiwi</title>
+<title>Fotogalerij | The Magenta Kiwi — JEFFREY Private Collection</title>
 
 <link rel="icon" type="image/png" href="favicon.png?v=3">
 <link rel="shortcut icon" type="image/png" href="favicon.png?v=3">
@@ -27,23 +27,51 @@
   }
 
   header {
-    padding: 1.5rem 1rem;
+    padding: 2.5rem 1rem 1.5rem 1rem;
     text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: #c5a059;
     border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
   }
 
-  header a {
-    color: #c5a059;
+  .logo-title {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #c5a059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-indent: 12px; /* Zorgt voor exact gelijke centrering met de hoofdpagina */
     text-decoration: none;
+  }
+
+  .logo-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 6px;
+    color: #c5a059;
+    text-transform: uppercase;
+    opacity: 0.85;
+    text-indent: 6px;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     transition: color 0.2s;
   }
 
-  header a:hover {
-    color: #d4af37;
+  .back-link:hover {
+    color: #c5a059;
   }
 
   .container {
@@ -107,6 +135,11 @@
   footer a {
     color: #94a3b8;
     text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  footer a:hover {
+    color: #c5a059;
   }
 
   /* Pop-up scherm voor vergroting */
@@ -133,7 +166,9 @@
 <body>
 
   <header>
-    <a href="index.html">&larr; Terug naar de Private Collection</a>
+    <a href="index.html" class="logo-title">JEFFREY</a>
+    <div class="logo-subtitle">Private Collection</div>
+    <a href="index.html" class="back-link">&larr; Terug naar het kunstwerk</a>
   </header>
 
   <main class="container">
@@ -153,7 +188,7 @@
   </main>
 
   <footer>
-    &copy; Jeffrey Meulendijks &mdash; <a href="index.html">Terug naar de Private Collection</a>
+    &copy; JEFFREY Private Collection &mdash; <a href="index.html">Terug naar de hoofdcollectie</a>
   </footer>
 
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
