@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Magenta Kiwi | JEFFREY Private Collection</title>
+
+<meta name="description" content="The Magenta Kiwi is een exclusief, eenmalig vervaardigd kunstvoorwerp (Unicum 1/1) uit de JEFFREY Private Collection. Bekijk de fotogalerij en boek een privébezichtiging.">
+
+<!-- Open Graph / WhatsApp Preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jeffreymeulendijks.nl/">
+<meta property="og:title" content="The Magenta Kiwi | JEFFREY Private Collection">
+<meta property="og:description" content="Unicum 1/1 uit de JEFFREY Private Collection. Bekijk de details en informeer naar een privébezichtiging.">
+<meta property="og:image" content="https://jeffreymeulendijks.nl/1.png">
+
+<link rel="icon" type="image/png" href="favicon.png?v=3">
+<link rel="shortcut icon" type="image/png" href="favicon.png?v=3">
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    background-color: #090a0f;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .logo-title {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 800;
+    letter-spacing: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #c5a059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    padding-left: 12px; /* Compenseert de letter-spacing voor perfecte centrering */
+  }
+
+  .logo-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 6px;
+    color: #c5a059;
+    text-transform: uppercase;
+    opacity: 0.85;
+    padding-left: 6px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .container { grid-template-columns: 1fr; gap: 2.5rem; padding: 2rem 1.5rem; }
+  }
+
+  .artwork-stage-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .artwork-stage {
+    position: relative;
+    background: #000000;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+  }
+
+  .artwork-stage:hover {
+    transform: scale(1.01);
+    border-color: #c5a059;
+  }
+
+  .artwork-stage video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+
+  .gallery-hint {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+  }
+
+  .gallery-hint:hover {
+    color: #c5a059;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .badge {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.4rem 1rem;
+    background: rgba(197, 160, 89, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: #d4af37;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.3;
+    padding-bottom: 0.2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    word-break: break-word;
+  }
+
+  .price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .price {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #c5a059;
+  }
+
+  .vat-label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 400;
+  }
+
+  .description {
+    color: #94a3b8;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+
+  .specs-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.2rem;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+  }
+
+  .specs-list li span {
+    color: #94a3b8;
+  }
+
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 1.25rem 2.5rem;
+    background: linear-gradient(135deg, #c5a059 0%, #9a7b38 100%);
+    color: #0b0d12;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(197, 160, 89, 0.4);
+    background: linear-gradient(135deg, #d4af37 0%, #a8863c 100%);
+  }
+
+  .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .whatsapp-link:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(197, 160, 89, 0.4);
+    color: #c5a059;
+  }
+
+  .trust-note {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  /* Curator & Verkoper Sectie */
+  .curator-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    padding: 0 2rem;
+  }
+
+  .curator-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .curator-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  .curator-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c5a059;
+    flex-shrink: 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .curator-text h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+  }
+
+  .curator-role {
+    font-size: 0.85rem;
+    color: #c5a059;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .curator-bio {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .company-info {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.25rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: #c5a059;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">JEFFREY</div>
+    <div class="logo-subtitle">Private Collection</div>
+  </header>
+
+  <main class="container">
+    <div class="artwork-stage-wrapper">
+      <a href="details.html" class="artwork-stage" title="Klik voor de fotogalerij">
+        <video autoplay loop muted playsinline>
+          <source src="kiwi.mp4" type="video/mp4">
+          Je browser ondersteunt deze video niet.
+        </video>
+      </a>
+      <a href="details.html" class="gallery-hint">
+        &bull; Klik op het kunstwerk voor de fotogalerij
+      </a>
+    </div>
+
+    <div class="details">
+      <div class="badge">Unicum &mdash; 1 van 1</div>
+      <h1>The Magenta Kiwi</h1>
+      
+      <div class="price-container">
+        <div class="price">€ 49.950,-</div>
+        <div class="vat-label">(excl. 9% btw)</div>
+      </div>
+
+      <p class="description">
+        Een zeldzame, expressieve sculptuur vervaardigd met een unieke organische textuur in intens magenta. Geplaatst op een strakke, minimalistische zwarte sokkel voor het ultieme contrast. Een absoluut statement-piece voor de liefhebber van moderne, avant-gardistische kunst.
+      </p>
+
+      <ul class="specs-list">
+        <li><span>Afmetingen kunstwerk:</span> 20 cm (L) x 10 cm (B) x 14 cm (H)</li>
+        <li><span>Materialen:</span> kiwi (piepschuim), poten (ijzer) en sokkel (triplex)</li>
+        <li><span>Echtheid:</span> Geleverd met handgetekend Certificaat van Echtheid (1/1)</li>
+      </ul>
+
+      <div class="cta-section">
+        <a href="mailto:jeffreymeulendijk@gmail.com?subject=Aanvraag%20Bezichtiging%20The%20Magenta%20Kiwi" class="cta-button">
+          Informeer of Boek Bezichtiging
+        </a>
+
+        <a href="https://wa.me/31612345678?text=Hallo%20Jeffrey,%20ik%20heb%20interesse%20in%20The%20Magenta%20Kiwi." target="_blank" class="whatsapp-link">
+          Stel direct een vraag via WhatsApp
+        </a>
+
+        <div class="trust-note">
+          Vrijblijvende aanvraag &bull; Persoonlijke reactie binnen 24 uur
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Curator & Verkoper Sectie -->
+  <section class="curator-section">
+    <div class="curator-card">
+      <img src="profielfoto.png" alt="Jeffrey Meulendijks" class="curator-avatar">
+      <div class="curator-text">
+        <h3>Jeffrey Meulendijks</h3>
+        <div class="curator-role">Curator &amp; Vertegenwoordiger</div>
+        <p class="curator-bio">
+          Dit unieke kunstwerk is met uiterste precisie en passie vervaardigd door mijn vader. Als beheerder van deze bijzondere privécollectie draag ik zorg voor de bemiddeling, bezichtigingen en de persoonlijke overdracht aan de nieuwe eigenaar. Neem gerust contact op voor vragen over de herkomst of het boeken van een bezichtiging.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>&copy; JEFFREY Private Collection &mdash; Alle rechten voorbehouden.</div>
+    <div class="company-info">Gevestigd te Veghel &bull; KvK: 15263748</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jeffrey-meulendijks-181b79132/" target="_blank">LinkedIn Profiel</a>
+      <span>&bull;</span>
+      <a href="privacy.html">Privacyverklaring</a>
+      <span>&bull;</span>
+      <a href="voorwaarden.html">Algemene Voorwaarden</a>
+    </div>
+  </footer>
+
+</body>
+</html>
