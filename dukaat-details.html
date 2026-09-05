@@ -10,7 +10,15 @@
 
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', -apple-system, sans-serif; background-color: #090a0f; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+  body { 
+    font-family: 'Segoe UI', -apple-system, sans-serif; 
+    background-color: #090a0f; 
+    color: #f8fafc; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  }
 
   header {
     padding: 2.5rem 1rem 1.5rem 1rem;
@@ -31,6 +39,7 @@
   .back-link {
     display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem;
     color: #94a3b8; text-decoration: none; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase;
+    transition: color 0.2s;
   }
   .back-link:hover { color: #c5a059; }
 
@@ -39,26 +48,68 @@
   .subtitle { font-size: 0.9rem; color: #94a3b8; text-align: center; margin-bottom: 3rem; }
 
   .gallery-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem;
   }
 
+  /* Chique goud-geaccentueerde kaarten met diepe achtergrond */
   .gallery-item {
-    position: relative; border-radius: 16px; overflow: hidden;
-    border: 1px solid rgba(197, 160, 89, 0.2); cursor: pointer; background: #000000;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative; 
+    border-radius: 20px; 
+    overflow: hidden;
+    border: 1px solid rgba(197, 160, 89, 0.25); 
+    cursor: pointer; 
+    background: radial-gradient(circle, rgba(28, 25, 18, 0.95) 0%, rgba(5, 6, 9, 1) 90%);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
-  .gallery-item:hover { transform: translateY(-4px); border-color: #c5a059; }
-  .gallery-item img { width: 100%; height: 100%; object-fit: contain; display: block; padding: 1rem; }
+
+  .gallery-item:hover { 
+    transform: translateY(-6px); 
+    border-color: #c5a059; 
+    box-shadow: 0 15px 35px rgba(197, 160, 89, 0.25);
+  }
+
+  /* Zorgt dat losse munten als een ronde, gouden schijf zweven */
+  .coin-img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(197, 160, 89, 0.3);
+  }
+
+  /* Voor de PCGS houder (rechthoekig) */
+  .slab-img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  }
 
   footer { padding: 2rem 1rem; text-align: center; font-size: 0.85rem; color: #64748b; border-top: 1px solid rgba(255, 255, 255, 0.05); }
   footer a { color: #94a3b8; text-decoration: none; }
   footer a:hover { color: #c5a059; }
 
+  /* Lightbox vergroting */
   .lightbox {
     display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.92); z-index: 1000; justify-content: center; align-items: center; padding: 1.5rem;
+    background: rgba(0,0,0,0.94); z-index: 1000; justify-content: center; align-items: center; padding: 1.5rem;
   }
-  .lightbox img { max-width: 90%; max-height: 85vh; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
+  .lightbox img { 
+    max-width: 90%; 
+    max-height: 85vh; 
+    border-radius: 16px; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+  }
 </style>
 </head>
 <body>
@@ -74,9 +125,15 @@
     <div class="subtitle">Klik op een afbeelding voor een scherpe vergroting</div>
 
     <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox('dukaat-voor.jpg')"><img src="dukaat-voor.jpg" alt="Gouden Dukaat Voorzijde"></div>
-      <div class="gallery-item" onclick="openLightbox('dukaat-achter.jpg')"><img src="dukaat-achter.jpg" alt="Gouden Dukaat Keerzijde"></div>
-      <div class="gallery-item" onclick="openLightbox('dukaat-pcgs.jpg')"><img src="dukaat-pcgs.jpg" alt="PCGS Holder AU53"></div>
+      <div class="gallery-item" onclick="openLightbox('dukaat-voor.jpg')">
+        <img src="dukaat-voor.jpg" alt="Gouden Dukaat Voorzijde" class="coin-img">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('dukaat-achter.jpg')">
+        <img src="dukaat-achter.jpg" alt="Gouden Dukaat Keerzijde" class="coin-img">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('dukaat-pcgs.jpg')">
+        <img src="dukaat-pcgs.jpg" alt="PCGS Holder AU53" class="slab-img">
+      </div>
     </div>
   </main>
 
