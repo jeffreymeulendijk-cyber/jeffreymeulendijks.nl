@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fotogalerij | Gouden Dukaat 1762 — JEFFREY Private Collection</title>
+
+<link rel="icon" type="image/png" href="favicon.png?v=3">
+<link rel="shortcut icon" type="image/png" href="favicon.png?v=3">
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', -apple-system, sans-serif; background-color: #090a0f; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+
+  header {
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+    display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  }
+
+  .logo-title {
+    font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 800; letter-spacing: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #c5a059 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    text-transform: uppercase; text-indent: 12px; text-decoration: none;
+  }
+
+  .logo-subtitle { font-size: 0.75rem; letter-spacing: 6px; color: #c5a059; text-transform: uppercase; opacity: 0.85; text-indent: 6px; }
+
+  .back-link {
+    display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem;
+    color: #94a3b8; text-decoration: none; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase;
+  }
+  .back-link:hover { color: #c5a059; }
+
+  .container { max-width: 1100px; width: 100%; margin: 0 auto; padding: 3rem 1.5rem; }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: #ffffff; text-align: center; margin-bottom: 0.5rem; }
+  .subtitle { font-size: 0.9rem; color: #94a3b8; text-align: center; margin-bottom: 3rem; }
+
+  .gallery-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+  }
+
+  .gallery-item {
+    position: relative; border-radius: 16px; overflow: hidden;
+    border: 1px solid rgba(197, 160, 89, 0.2); cursor: pointer; background: #000000;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .gallery-item:hover { transform: translateY(-4px); border-color: #c5a059; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: contain; display: block; padding: 1rem; }
+
+  footer { padding: 2rem 1rem; text-align: center; font-size: 0.85rem; color: #64748b; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+  footer a { color: #94a3b8; text-decoration: none; }
+  footer a:hover { color: #c5a059; }
+
+  .lightbox {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.92); z-index: 1000; justify-content: center; align-items: center; padding: 1.5rem;
+  }
+  .lightbox img { max-width: 90%; max-height: 85vh; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
+</style>
+</head>
+<body>
+
+  <header>
+    <a href="dukaat.html" class="logo-title">JEFFREY</a>
+    <div class="logo-subtitle">Private Collection</div>
+    <a href="dukaat.html" class="back-link">&larr; Terug naar de Gouden Dukaat</a>
+  </header>
+
+  <main class="container">
+    <h1>Fotogalerij &amp; PCGS Certificering</h1>
+    <div class="subtitle">Klik op een afbeelding voor een scherpe vergroting</div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox('dukaat-voor.jpg')"><img src="dukaat-voor.jpg" alt="Gouden Dukaat Voorzijde"></div>
+      <div class="gallery-item" onclick="openLightbox('dukaat-achter.jpg')"><img src="dukaat-achter.jpg" alt="Gouden Dukaat Keerzijde"></div>
+      <div class="gallery-item" onclick="openLightbox('dukaat-pcgs.jpg')"><img src="dukaat-pcgs.jpg" alt="PCGS Holder AU53"></div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; JEFFREY Private Collection &mdash; <a href="dukaat.html">Terug naar de Gouden Dukaat</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="Vergrote weergave">
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
